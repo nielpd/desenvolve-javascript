@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  padding: 0;
+}
+
+#topo {
+  background-color: #1f1f1f;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+.titulo-site {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+.botao-secreto {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subtitulo-site {
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+#conteudo {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.artigo-politico {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-left: 4px solid #00bcd4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-artigo {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.data-artigo {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.texto-artigo p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#rodape {
+  background-color: #1f1f1f;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid #333;
+}
