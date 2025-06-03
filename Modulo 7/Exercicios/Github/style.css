@@ -1,0 +1,195 @@
+:root {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --input-background-color: #333;
+  --input-text-color: #eee;
+  --button-background-color: #555;
+  --button-text-color: #fff;
+  --accent-color: #64ffda;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--accent-color);
+}
+
+.search-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  flex: 1 1 250px;
+  max-width: 300px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  background-color: var(--input-background-color);
+  color: var(--input-text-color);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--button-background-color);
+}
+
+button {
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+.profile-info p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 6px 0;
+}
+
+.profile-info p strong {
+  color: #ccc;
+}
+
+.hidden {
+  display: none;
+}
+
+.history-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  color: var(--text-color);
+}
+
+.history-container h3 {
+  margin-bottom: 12px;
+  color: var(--accent-color);
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#historyList li {
+  cursor: pointer;
+  padding: 8px 12px;
+  background-color: var(--input-background-color);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: background-color 0.2s;
+}
+
+#historyList li:hover {
+  background-color: var(--button-background-color);
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-info h2 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    max-width: none;
+  }
+}

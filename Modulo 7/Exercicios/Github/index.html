@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ConectaDev</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>ConectaDev</h1>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="usernameInput"
+          placeholder="Enter GitHub Username"
+        />
+        <button id="searchBtn">Buscar</button>
+      </div>
+
+      <div class="profile-container hidden" id="profileDisplay">
+  <div class="profile-avatar">
+    <img
+      src="https://placehold.co/150x150"
+      alt="Avatar Exemplo"
+      id="avatar"
+    />
+  </div>
+  <div class="profile-info">
+    <h2 id="name"></h2>
+    <p id="bio">
+     
+    </p>
+    <p><strong>Nome de usuário: </strong> <span id="username"></span></p>
+    <p><strong>Repositórios: </strong> <span id="repos"></span></p>
+    <p><strong>Seguidores: </strong> <span id="followers"></span></p>
+  </div>
+</div>
+
+<div class="history-container" id="historyContainer">
+  <h3>Histórico de buscas</h3>
+  <ul id="historyList"></ul>
+</div>
+
+
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
